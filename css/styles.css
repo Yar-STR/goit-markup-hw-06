@@ -882,20 +882,54 @@ border-color: #4D5AE5;
 }
 
 
-
 .check-box-style {
-font-family: 'Roboto';
+   display: flex;
+   justify-content: start;
+   align-items: center;
+  font-family: 'Roboto';
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8E8F99;
 }
+.check-box-style span {
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 16px;
+height: 16px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 2px;
+fill: transparent;
+margin-right: 8px;
+}
+
+/* .checkbox-text {
+   margin-left: 8px;
+} */
+.check-box-svg {
+   width: 10px;
+   height: 8px;
+ }
 
 .checkbox-policy {
    margin-bottom: 24px;
+     }
+
+.checkbox-input {
+top: 0;
+ position: absolute;
+ opacity: 0;
 }
+.checkbox-input:checked + .check-box-style span {
+   background: #404BBF;
+   fill:#F4F4FD;
+   border: none;
+}
+
 .policy-link {
    color: #4D5AE5;
+   margin-left: 3px;
 }
 
 .modal-submit-btn {
