@@ -584,7 +584,7 @@ margin-bottom: 16px;
 
 .subscribe-inpt-group {
    display: flex;
-   justify-content: center;
+   justify-content: start
 }
 .subscribe-input {
    
@@ -896,9 +896,7 @@ padding: 8px 16px 8px 34px;
 border-color: rgba(46, 47, 66, 0.4);
 fill: #2E2F42;
 }
-.modal-contact-item:valid {
-   border-color: green;
-}
+
 
 .modal-contact-item:not(:placeholder-shown) {
 border-color: #4D5AE5;
@@ -995,6 +993,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
 .checkbox-policy {
    display: flex;
+   margin-top: 16px;
    margin-bottom: 24px;
      }
 
