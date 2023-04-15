@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>а
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -293,11 +293,20 @@
                 <svg class="svg-soc-media"> <use href="./images/social-network-links/socnetworks-sprite-optzd2.svg#icon-linkedin-orig-opt"></use> </svg> 
             </a></li>
           </ul>
-
         </div>
+        
+<div> <form class="footer-subscribe">
+<label for="subscribe-text" class="subscribe-text">Subscribe</label>
+<div class="subscribe-inpt-group"><input type="email" name="subscribe-text" id="subscribe-text" placeholder="E-mail" class="subscribe-input">
+<button type="submit" class="sbcrb-submit-btn">Subscribe 
+  <svg><use href="./images/footer-sbcr/subscribe-svg.svg#icon-subscribe-svg"></use></svg>
+</button></form></div>
 
+</div>
     </div>
     </footer>
+
+    <!-- -----//-------Модалка -------//----- -->
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -314,28 +323,28 @@
       <svg class="modal-form-svg"><use href="./images/modal-form-svg/modal-form-svg.svg#icon-person-svg"></use></svg></div>
         <label for="contact-phone" class="modal-contacts">Phone</label>
          <div class="modal-svg-group">
-        <input type="text" class="modal-contact-item" name="contact-phone" id="contact-phone" placeholder=" " required minlength="19" maxlength="20">
+        <input type="tel" class="modal-contact-item" name="contact-phone" id="contact-phone" placeholder=" " required minlength="19" maxlength="20">
       <svg class="modal-form-svg"><use href="./images/modal-form-svg/modal-form-svg.svg#icon-phone-svg"></use></svg></div>
         <label for="contact-email" class="modal-contacts">Email</label>
         <div class="modal-svg-group">
-        <input type="text" class="modal-contact-item" name="contact-email" id="contact-email" placeholder=" " required minlength="3" maxlength="35">
+        <input type="email" class="modal-contact-item" name="contact-email" id="contact-email" placeholder=" " required minlength="3" maxlength="35">
       <svg class="modal-form-svg"><use href="./images/modal-form-svg/modal-form-svg.svg#icon-email-svg"></use></svg></div>
        <div>
 <label for="user-comment" class="modal-comment">Comment</label>
         <textarea name="user-comment" placeholder="Text input" id="user-comment" class="modal-text-comment"></textarea>
       </div> 
-    
-      </div> 
+    </div> 
      
       
 <div class="checkbox-policy">
   <input type="checkbox" name="privacy-checkbox" id="privacy-checkbox"  required class="checkbox-input">
-  <label for="privacy-checkbox" class="check-box-style"><span><svg class="check-box-svg"><use href="./images/modal-form-svg/modal-form-svg.svg#icon-check-box-svg"></use></svg></span> I accept the terms and conditions of the&nbsp;<a href="" class="policy-link">Privacy Policy</a></label>
+  <label for="privacy-checkbox" class="check-box-style"><span  tabindex="0"><svg class="check-box-svg"><use href="./images/modal-form-svg/modal-form-svg.svg#icon-check-box-svg"></use></svg></span> I accept the terms and conditions of the&nbsp;<a href="" class="policy-link">Privacy Policy</a></label>
 </div>
- </form>
  <div class="mod-btn-sbmt">
 <button type="submit" class="modal-submit-btn">Send</button>
 </div>
+ </form>
+
 </div>
       
     </div>

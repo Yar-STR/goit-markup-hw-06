@@ -35,6 +35,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
    --logo-std-ft: #F4F4FD;
    --logo-text-ft: #F4F4FD;
    --team-position-color: #434455;
+   --subscribe-color-text: #FFFFFF;
+   --subscribe-color-placeholder: #FFFFFF;
    }
 
    /* section {
@@ -505,11 +507,13 @@ line-height: 1.5;
 /* Socialmedia */
 .footer-flex-blocks {
    display: flex;
+justify-content: start;
+
 }
 .socnetwork-media {
 width: 208px;
 height: 80px;
-margin: 0 auto 0 120px;
+margin: 0 0 0 120px;
 
 }
 
@@ -546,7 +550,7 @@ height: 40px;
 border: 1px transparent;
 color: var(--button-color-white-portf);
 border-radius: 50%;
-background-color: rgba(255, 255, 255, 0.1);
+background-color: #4D5AE5;
 transition-property: background-color;
 transition-duration: 250ms;
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
@@ -563,7 +567,76 @@ background-color: #31D0AA;;
 
 }
 
+.footer-subscribe {
+   margin: 0px auto 0px 80px;
+ 
+   text-align: left;
+}
+.subscribe-text {
+display: block;
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: var(--subscribe-color-text);
+margin-bottom: 16px;
+}
 
+.subscribe-inpt-group {
+   display: flex;
+   justify-content: center;
+}
+.subscribe-input {
+   
+   width: 264px;
+   height: 40px;
+   border: 1px solid #FFFFFF;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+outline: none;
+background-color: inherit;
+padding: 8px 16px;
+color: var(--subscribe-color-text);
+}
+.subscribe-input::placeholder {
+ 
+color: var(--subscribe-color-placeholder);
+font-size: 12px;
+line-height: 2;
+}
+
+.sbcrb-submit-btn {
+   width: 165px;
+   height: 40px;
+   background: #4D5AE5;
+border-radius: 4px;
+border: none;
+color: var(--button-centr-color-white);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+padding: 8px 24px;
+margin-left: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+cursor: pointer;
+}
+.sbcrb-submit-btn:hover,
+.sbcrb-submit-btn:focus {
+ background-color: var(--button-color-centr-hover);
+    
+   }
+   
+.sbcrb-submit-btn svg {
+   width: 24px;
+   height: 24px;
+   fill: #FFFFFF;
+   margin-left: 16px;
+}
 /* ---------//Portfolio page //---------------- */
 
 
@@ -707,6 +780,8 @@ margin-bottom: 8px;
 line-height: 1.5;
 }
 
+/* -----//------Модалка---------//---- */
+
 .backdrop {
    position: fixed;
    top: 0;
@@ -821,6 +896,9 @@ padding: 8px 16px 8px 34px;
 border-color: rgba(46, 47, 66, 0.4);
 fill: #2E2F42;
 }
+.modal-contact-item:valid {
+   border-color: green;
+}
 
 .modal-contact-item:not(:placeholder-shown) {
 border-color: #4D5AE5;
@@ -902,6 +980,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 2px;
 fill: transparent;
 margin-right: 8px;
+tab-size: 4;
 }
 
 /* .checkbox-text {
@@ -917,10 +996,15 @@ margin-right: 8px;
      }
 
 .checkbox-input {
-top: 0;
  position: absolute;
- opacity: 0;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
+
 .checkbox-input:checked + .check-box-style span {
    background: #404BBF;
    fill:#F4F4FD;
